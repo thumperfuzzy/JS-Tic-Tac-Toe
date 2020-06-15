@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta lang="en">
-        <link rel="icon" type="image/png" href="favicon.ico">
-        <title>Tic Tac Toe in JS</title>
-        <script src="tictactoe.js"></script>
-    </head>
+	<head>
+		<meta lang="en">
+		<link rel="icon" type="image/png" href="favicon.ico">
+		<title>Tic Tac Toe in JS</title>
+		<script src="tictactoe.js"></script>
+	</head>
 
-    <body onload="start();">
-        <canvas id="canvas" class="GameArea" width="350" height="350" >
-            <p>It looks like your browser doesn't support canvases.</p>
-            <br />
-            <p>Please use a browser that supports canvases to play this game.</p>
-        </canvas>
+	<body onload="start();">
+		<canvas id="canvas" class="GameArea" width="350" height="350" >
+			<p>It looks like your browser doesn't support canvases.</p>
+			<br />
+			<p>Please use a browser that supports canvases to play this game.</p>
+		</canvas>
 
-        <h1 id="gameover"></h1>
+		<h1 id="gameover"></h1>
 
-        <script>
-            const canvas = document.querySelector('.GameArea');
-            const ctx = canvas.getContext('2d');
-        </script>
-    </body>
+		<script>
+			const canvas = document.querySelector('.GameArea');
+			const ctx = canvas.getContext('2d');
+		</script>
+	</body>
 </html>
