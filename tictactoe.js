@@ -70,8 +70,18 @@ function drawLine(sX, sY, eX, eY, width, color){
 }
 
 function start(){
+	document.getElementById("again").style.visibility = "hidden";
 	draw();
 	drawBoard();
+	playAgain();
+}
+
+function playAgain(){
+	var playAgainButton = document.getElementById("again");
+	playAgainButton.addEventListener("mousedown", e=>{
+		location.reload(false);
+		return false;
+	});
 }
 
 function draw(){
@@ -93,6 +103,7 @@ function draw(){
 		testForWin();
 		if(move > 9){
 			document.getElementById("gameover").innerHTML = "Tie";
+			document.getElementById("again").style.visibility = "visible";
 		}
 	});
 
@@ -159,7 +170,8 @@ function testForWin(){
 			if(movePos.get(parseInt(testCondition.charAt(0))) != undefined && movePos.get(parseInt(testCondition.charAt(1))) != undefined && movePos.get(parseInt(testCondition.charAt(2))) != undefined){
 				if(movePos.get(parseInt(testCondition.charAt(0))) == movePos.get(parseInt(testCondition.charAt(1))) && movePos.get(parseInt(testCondition.charAt(1))) == movePos.get(parseInt(testCondition.charAt(2)))){
 					document.getElementById("gameover").innerHTML = movePos.get(parseInt(testCondition.charAt(0))) + " Wins";
-					win = true
+					win = true;
+					document.getElementById("again").style.visibility = "visible";
 				}
 			}
 		}
