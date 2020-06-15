@@ -7,8 +7,6 @@ To run the program, clone the repository and run the html file in any browser th
 
 	To Do:
 
-	~~make the x's and o's actually appear when you click~~
-	~~program the game logic~~
 	add this to my github website (thumperfuzzy.github.io)
 	make the website more visually interresting
 	other assorted things that will pop up
