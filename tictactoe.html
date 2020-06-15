@@ -6,7 +6,15 @@
         <script src="tictactoe.js"></script>
     </head>
 
-    <body>
-
+    <body onload="start();">
+        <canvas id="canvas" class="GameArea" width="500" height="500" >
+            <p>It looks like your browser doesn't support canvases.</p>
+            <br />
+            <p>Please use a browser that supports canvases to play this game.</p>
+        </canvas>
+        <script>
+            const canvas = document.querySelector('.GameArea');
+            const ctx = canvas.getContext('2d');
+        </script>
     </body>
 </html>
