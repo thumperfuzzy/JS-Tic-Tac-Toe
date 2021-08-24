@@ -5,4 +5,4 @@ This is a project I've been thinkin about doing for a while to try to get better
 
 To run the program, clone the repository and run the html file in any browser that supports the canvas element, which is most modern browsers.
 
-You can also just download all of the files and run the html file, or it is now on thumperfuzzy.github.io
+You can also just download all of the files and run the html file, or it is now on thumperfuzzy.github.io (though the version on there may not be the same version as this).
